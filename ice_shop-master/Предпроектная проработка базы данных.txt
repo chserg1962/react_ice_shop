@@ -1,0 +1,52 @@
+Основа Доп.основа Наполнитель1  Наполнитель2 Наполнитель3 Наполнитель4 Наполнитель5 Цена Популярность Хит Новинка Жирность Единицы измерения Изображение
+
+Таблица Основа поля:
+id
+name_base
+
+Таблица Доп.основа поля:
+id
+name_extrabase
+
+Таблица Наполнителей
+id
+name_filler
+
+Таблица icecream
+id_icecream
+num_base
+num_extrabase
+num_filler1
+num_filler2
+num_filler3
+num_filler4
+num_filler5
+price
+popularity
+hit
+new_icecream
+richness
+units
+photo
+
+Корзина 
+id_session
+id_icecream
+quantity
+price
+summa
+
+Таблица заказов
+id_order
+id_users
+name_order
+date_order
+delivery_adress
+summa_order
+
+Таблица order_content
+id_order
+id_icecream
+quantity
+price
+summa
