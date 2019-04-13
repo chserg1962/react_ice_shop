@@ -5,9 +5,9 @@ import './Filters.css';
 
 const createSliderWithTooltip = Slider.createSliderWithTooltip;
 const Range = createSliderWithTooltip(Slider.Range);
-const style = { 'background-color': '#a7b6b9', 'margin-top': '35px',  'margin-left': '5px'};
-const style1 = {width: 20, 'height': 20, 'border-radius': 10, top: 2};
-const trackStyle = {top: '-20px'};
+const styleTrack = [{width: 460,  top: '16px', 'background-color': '#EC6F5E'}];
+const styleHandle = [{width: 20, 'height': 20, 'border-radius': 10, top: 13}];
+const StyleRail = {top: '16px', 'background-color': '#f8f7f4'};
 
 class Filters extends Component {
     constructor(props) {
@@ -17,14 +17,13 @@ class Filters extends Component {
 
         };
     }
-
     render() {
         return (
 
             <div className="filters">
                 <h2 className="visually_hidden">Сортировка товаров</h2>
 
-                <form className="filter" action="output_card.php" encType="multipart/form-data"
+                <form className="filter"  encType="multipart/form-data"
                     method="post" target="_self" id="FormFilter" name="FormFilter">
                     <div className="filter_top">
                         <fieldset className="for_select">
@@ -39,13 +38,17 @@ class Filters extends Component {
 
                         <fieldset className="by_price">
                             <legend>Цена: 100 руб. – 500 руб.</legend>
+                            <div className="sliderStyle">
+                                <Range className="rangeStyle"
+                                    min ={0}
+                                    max ={500}
+                                    defaultValue={[100, 400]}
+                                    trackStyle = {styleTrack}
+                                    handleStyle ={styleHandle}
+                                    railStyle = {StyleRail}
 
-                                    <Range className="railStyle"
-                                           max ={500}
-                                           defaultValue={[100, 400]}
-                                           handleStyle ={style1}
-                                           trackStyle = {trackStyle}
-                                    />
+                                />
+                            </div>
 
                         </fieldset>
 

@@ -3,9 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "rc-slider": "^8.6.7",
-    "react": "^16.8.4",
-    "react-dom": "^16.8.4",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.0",
     "react-scripts": "^2.1.8"
   },
@@ -25,8 +24,10 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "nuka-carousel": "^4.5.3",
     "prop-types": "^15.7.2",
-    "react-iframe": "^1.5.0"
+    "rc-slider": "^8.6.9",
+    "react-iframe": "^1.7.11",
+    "ts-pnp": "^1.0.1",
+    "typescript": "^3.4.3"
   }
 }
